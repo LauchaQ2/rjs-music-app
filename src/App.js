@@ -4,28 +4,28 @@ import Player from './components/Player/Player';
 function App() {
   const [songs] = useState([
     {
-      title: "Forget me too ft. Halsey",
-      artist: "Machine Gun Kelly",
-      img_src: "./images/song-1.jpg",
-      src: "./music/on-n-on.mp3"
+      title: "Chucky73 - BZRP Music Sessions #43",
+      artist: "Bizarrap ft. Chucky73",
+      img_src: "./images/song-1.png",
+      src: "./music/bzrp43.mp3"
     },
     {
-      title: "Song 2",
-      artist: "Artist 2",
+      title: "Eladio Carrión - BZRP Music Sessions #40",
+      artist: "Bizarrap ft. Eladio Carrión",
       img_src: "./images/song-2.jpg",
-      src: "./music/somebody-new.mp3"
+      src: "./music/bzrp40.mp3"
     },
     {
-      title: "Song 3",
-      artist: "Artist 3",
-      img_src: "./images/song-3.jpg",
-      src: "./music/on-n-on.mp3"
+      title: "NICKI NICOLE - BZRP Music Sessions #13",
+      artist: "Bizarrap ft. Nicki Nicole",
+      img_src: "./images/song-3.png",
+      src: "./music/bzrp13.mp3"
     },
     {
-      title: "Song 4",
-      artist: "Artist 4",
+      title: "Snow Tha Product - BZRP Music Sessions #39",
+      artist: "Bizarrap ft. Snow Tha Product",
       img_src: "./images/song-4.jpg",
-      src: "./music/somebody-new.mp3"
+      src: "./music/bzrp39.mp3"
     }
   ]);
 
