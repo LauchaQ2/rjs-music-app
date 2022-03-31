@@ -40,6 +40,10 @@ function Player(props) {
         }
     }
 
+    const ShuffleSong = () =>{
+        props.setCurrentSongIndex(Math.floor(Math.random() * 10) + 1);
+    }
+
     return (
         <div className="c-player">
             <audio onEnded={SkipSong} src={props.songs[props.currentSongIndex].src} ref={audioEl}></audio>
@@ -48,7 +52,7 @@ function Player(props) {
             </h4>
             <h4>Escuchando</h4>
             <Details song={props.songs[props.currentSongIndex]} />
-            <Controls isPlaying={isPlaying} setIsPlaying={setIsPlaying} SkipSong={SkipSong} />
+            <Controls isPlaying={isPlaying} ShuffleSong={ShuffleSong} setIsPlaying={setIsPlaying} SkipSong={SkipSong} />
             <p>Siguiente: <span>{props.songs[props.nextSongIndex].title} by {props.songs[props.nextSongIndex].artist}</span></p>
         </div>
     )

@@ -1,10 +1,10 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faPlay, faPause, faForward, faBackward } from '@fortawesome/free-solid-svg-icons'
+import { faPlay, faPause, faForward, faBackward, faRandom } from '@fortawesome/free-solid-svg-icons'
 
 function Controls(props) {
     return (
-        <div className="c-player--controls">
+        <><div className="c-player--controls">
             <button className="skip-btn" onClick={() => props.SkipSong(false)}>
                 <FontAwesomeIcon icon={faBackward} />
             </button>
@@ -15,6 +15,11 @@ function Controls(props) {
                 <FontAwesomeIcon icon={faForward} />
             </button>
         </div>
+        <div className="c-player--controls">
+                <button className="skip-btn" onClick={() => props.ShuffleSong()}>
+                    <FontAwesomeIcon icon={faRandom} />
+                </button>
+            </div></>
     )
 }
 
